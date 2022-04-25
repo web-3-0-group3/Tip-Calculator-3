@@ -7,19 +7,53 @@
     word-spacing: 0.2rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-   border-style: solid;
-   background: hsl(185, 41%, 84%);
-   padding-top: 0px;
+    background: hsl(0, 0%, 100%);
+   height: 100vh;
    font-size: 16px;
-}*/
-.container{
-    display: grid;
-    align-items: center;
-    height: 600px;
-    border: 100px solid hsl(185, 41%, 84%);;
+   border-style: solid;
+   border-color: hsl(185, 41%, 84%);
+   padding: 3rem;
 }
-.tip-calculator{
+.section{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 2em;
+    line-height: 25px;
+}
+.tip-calculator{
+    color:  hsl(186, 14%, 43%);
+}
+- Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Very light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%)
+*/
+body{
+        background-color: hsl(185, 41%, 84%);
+        width: 100%;
+}
+.container{
+    display: flex;
+    background-color: white;
+    width: 800px;
+    gap: 20px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+.right-side{
+    display: grid;
+    line-height: 1rem;
+    white-space: normal;
+    border:1px ;
+    background:  hsl(183, 100%, 15%) ;
+    border-radius: 2px;
+}
+.tip-amt{
+    white-space: break-spaces;
 }
