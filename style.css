@@ -3,33 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*body{
-    word-spacing: 0.2rem;
-    display: flex;
-    justify-content: center;
-    background: hsl(0, 0%, 100%);
-   height: 100vh;
-   font-size: 16px;
-   border-style: solid;
-   border-color: hsl(185, 41%, 84%);
-   padding: 3rem;
-}
-.section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2em;
-    line-height: 25px;
-}
-.tip-calculator{
-    color:  hsl(186, 14%, 43%);
-}
-- Very dark cyan: hsl(183, 100%, 15%)
-- Dark grayish cyan: hsl(186, 14%, 43%)
-- Grayish cyan: hsl(184, 14%, 56%)
-- Light grayish cyan: hsl(185, 41%, 84%)
-- Very light grayish cyan: hsl(189, 41%, 97%)
-- White: hsl(0, 0%, 100%)
-*/
 body{
         background-color: hsl(185, 41%, 84%);
         width: 100%;
