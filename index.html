@@ -9,12 +9,49 @@
     <title>Document</title>
 </head>
 
+
 <body>
+    <div class="logo"><img src="/asset/logo.svg" alt="" /></div>
     <main class="container">
         <!-- Isaac Work here -->
         <section>
-             
+           
+              <div class="error" id="error">
+                <button class="close-error" id="close-error">X</button>
+                <div class="alert">Please Enter Bill and Number of People First</div>
+              </div>
+              <div class="left-side">
+                <p>Bill</p>
+                <div class="bill-input">
+                  <!-- <img src="images/icon-dollar.svg" alt="" /> -->
+                  <input type="number" placeholder="0" id="bill" />
+                </div>
+                <p>Select Tip %</p>
+                <div class="tips">
+                  <div class="tip">5%</div>
+                  <div class="tip">10%</div>
+                  <div class="tip">15%</div>
+                  <div class="tip">25%</div>
+                  <div class="tip">50%</div>
+                  <input
+                    type="number"
+                    data-percentage
+                    class="tip"
+                    placeholder="Custom"
+                    id="custom-tip"
+                  />
+                </div>
+                <p>Number of People</p>
+                <div class="people-input">
+                  <!-- <img src="images/icon-person.svg" alt="" /> -->
+                  <input type="number" placeholder="0" id="people" />
+                </div>
+              </div>
         </section>
+
+        
+
+    
         <!-- Damilola Work starts here -->
         <section>
             <div class="right-side">
@@ -40,4 +77,3 @@
     <script src="./app.js"></script>
 </body>
 
-</html>
