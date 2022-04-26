@@ -93,14 +93,14 @@ input::-webkit-inner-spin-button {
   font-size: 1.5em;
 }
 .left-side input#bill {
-  background: url(../images/icon-dollar.svg) no-repeat left;
+  background: url(/asset/icon-dollar.svg) no-repeat left;
   background-position: 7px;
 }
 .left-side input#bill:focus {
   outline: none;
 }
 .left-side input#people {
-  background: url(../images/icon-person.svg) no-repeat left;
+  background: url(/asset/icon-person.svg) no-repeat left;
   background-position: 7px;
 }
 .left-side input#people:focus {
@@ -115,3 +115,19 @@ input::-webkit-inner-spin-button {
     background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
 }
+@media (max-width: 750px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 300px !important;
+    }
+    .left-side {
+      width: 90%;
+    }
+    .tips {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .right-side {
+      width: 90%;
+    }
+  }
