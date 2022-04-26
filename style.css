@@ -16,7 +16,9 @@ body {
     display: flex;
     justify-content: center;
   }
-  .container {
+
+
+.container{
     display: flex;
     background-color: white;
     width: 800px;
@@ -129,5 +131,65 @@ input::-webkit-inner-spin-button {
     }
     .right-side {
       width: 90%;
+    }
+  }
+}
+.right-side{
+    display: grid;
+    line-height: 1rem;
+    background:  hsl(183, 100%, 15%) ;
+    border-radius: 10px;
+}
+.right-side h5{
+    font-size: 10px;
+    color: hsl(189,41%, 97%);
+    word-spacing: 5px;
+}
+.right-side p{
+    color:  hsl(185,14%, 56%);
+    font-size: 10px;
+    word-spacing: 2px;
+}
+.tip-amount{
+    margin: 3em;
+}
+.tip-total{
+    margin: 10px 2em;
+}
+.dollars{
+    font-size: 4em;
+    color:  hsl(185, 41%, 84%);
+    margin-left: 100px;
+    word-spacing: 0.5px;
+}
+img{
+    height: 30px;
+}
+.btn{
+    display: flex;
+    background:  hsl(185, 41%, 84%);
+    padding: 10px 9em;
+    margin: 3rem;
+    border-radius: 5px;
+    color: hsl(185,14%, 56%);
+}
+.btn:hover{
+    background: hsl(180, 87%, 36%);
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+}
+@media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+      width: 500px;
+    }
+    .left-side {
+      width: 90%;
+    }
+    .right-side {
+      width: 90%;
+    }
+    .reset {
+      margin: 50px 20px 20px;
     }
   }
