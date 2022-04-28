@@ -37,10 +37,9 @@ body {
   position: relative;
 }
 .hidden {
-  display: block;
+  display: none;
 }
 .error {
-  display: none;
   position: absolute;
   width: 50%;
   height: 20%;
@@ -161,10 +160,10 @@ input::-webkit-inner-spin-button {
   .container {
     display: flex;
     flex-direction: column;
-    width: 300px !important;
+    width: 300px;
   }
   .left-side {
-    width: 90%;
+    width: 100%;
   }
   .tips {
     grid-template-columns: repeat(2, 1fr);
