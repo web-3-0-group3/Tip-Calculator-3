@@ -5,9 +5,10 @@ let btn1 = document.querySelector(".btn");
 let tipsPercentage = Array.from(document.getElementsByClassName("tips"))
 let tipAmount = document.querySelector('.tipupdate')
 let totalAmountPerPerson = document.querySelector('.tip-total1')
+const closePopUp = document.querySelector('.close-error')
 
-tipAmount.innerHTML = 0.00
-totalAmountPerPerson.innerHTML = 0.00
+tipAmount.innerHTML = 0.00;
+totalAmountPerPerson.innerHTML = 0.00;
 
 
 
@@ -23,6 +24,7 @@ let totalPersonOnTabble = people.addEventListener('input', (e) => {
 
 tipsPercentage.map(tips => {
   tips.addEventListener('click', (e) =>  {
+    if(amount > 0 && totalPersonOnTabble > 0) {
       console.log(e.target.innerText);
       switch(e.target.innerText) {
         case "5%" : 
@@ -71,14 +73,33 @@ tipsPercentage.map(tips => {
           document.querySelector('.tip25').classList.remove('selected')
           break;
       }
-    
+    } else {
+      document.querySelector('.error').classList.remove('hidden')
+      people.classList.add('notify-border')
+    }
   })
+  btn1.addEventListener("click", function () {
+    amount = 0;
+    totalPersonOnTabble = 0;
+    tipAmount.innerHTML = 0;
+    totalAmountPerPerson.innerHTML = 0;
+    bill.value = ""
+    people.value = ""
+    people.classList.remove('notify-border')
+  });
+  
 })
 
-btn1.addEventListener("click", function () {
-  tipAmount.innerHTML = 0
-  totalAmountPerPerson.innerHTML = 0
-  bill.value = ""
-  people.value = ""
-});
+closePopUp.addEventListener('click', () => {
+  document.querySelector('.error').classList.add('hidden')
+  people.classList.remove('notify-border')
+
+})
+
+// btn1.addEventListener("click", function () {
+//   tipAmount.innerHTML = 0
+//   totalAmountPerPerson.innerHTML = 0
+//   bill.value = ""
+//   people.value = ""
+// });
 
