@@ -4,7 +4,7 @@
 
 ## Blogr Website Landing Page
 
-[Live Link]https://tip-calculator-3-git-development-strakins.vercel.app/)
+[Live Link](https://tip-calculator-3-git-development-strakins.vercel.app/)
 
 This website was be created using 
 
