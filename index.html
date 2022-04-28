@@ -13,7 +13,7 @@
     <main class="container">
       <!-- Isaac Work here -->
       <section>
-        <div class="error" id="error">
+        <div class="error hidden" id="error">
           <button class="close-error" id="close-error">X</button>
           <div class="alert">Please Enter Bill and Number of People First</div>
         </div>
@@ -21,15 +21,15 @@
           <p>Bill</p>
           <div class="bill">
             <!-- <img src="images/icon-dollar.svg" alt="" /> -->
-            <input type="number" placeholder="0" id="bill" />
+            <input type="number" placeholder="0" id="bill" class="bill-amount"/>
           </div>
           <p>Select Tip %</p>
           <div class="tips">
-            <div class="tip">5%</div>
-            <div class="tip">10%</div>
-            <div class="tip">15%</div>
-            <div class="tip">25%</div>
-            <div class="tip">50%</div>
+            <div class="tip tip5">5%</div>
+            <div class="tip tip10">10%</div>
+            <div class="tip tip15">15%</div>
+            <div class="tip tip25">25%</div>
+            <div class="tip tip50">50%</div>
             <input
               type="number"
               data-percentage
@@ -41,7 +41,7 @@
           <p>Number of People</p>
           <div class="people-input">
             <!-- <img src="images/icon-person.svg" alt="" /> -->
-            <input type="number" placeholder="0" id="people" />
+            <input type="number" placeholder="0" class="people" id="people" />
           </div>
         </div>
       </section>
@@ -49,15 +49,16 @@
       <!-- Damilola Work starts here -->
       <section>
         <div class="right-side">
-          <div class="tip-amount">
-            <h5 class="tip-calc">
-              Tip Amount
-              <span class="dollars"
-                ><img src="./asset/icon-dollar.svg" alt="" />
-                <span class="tip-amt"> 4.27</span></span
-              >
-              <p>/ person</p>
-            </h5>
+          <div class="tip-content">
+            <div class="tip-amount">
+              <h5 class="tip-calc">Tip Amount
+                <p>/ person</p>
+              </h5>
+            </div>
+            <div class="tip-result">
+              <img src="./asset/icon-dollar.svg" alt="" />
+              <h4 class="tipupdate">4</h4>
+            </div>
           </div>
           <br />
           <br />
@@ -66,7 +67,7 @@
               Total
               <span class="dollars">
                 <img src="./asset/icon-dollar.svg" alt="" /><span
-                  class="tip-amt"
+                  class="tip-total1"
                 >
                   32.79</span
                 ></span
