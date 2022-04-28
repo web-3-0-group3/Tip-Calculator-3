@@ -75,6 +75,7 @@ tipsPercentage.map(tips => {
       }
     } else {
       document.querySelector('.error').classList.remove('hidden')
+      people.classList.add('notify-border')
     }
   })
   btn1.addEventListener("click", function () {
@@ -84,12 +85,15 @@ tipsPercentage.map(tips => {
     totalAmountPerPerson.innerHTML = 0;
     bill.value = ""
     people.value = ""
+    people.classList.remove('notify-border')
   });
   
 })
 
 closePopUp.addEventListener('click', () => {
   document.querySelector('.error').classList.add('hidden')
+  people.classList.remove('notify-border')
+
 })
 
 // btn1.addEventListener("click", function () {
