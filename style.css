@@ -164,7 +164,7 @@ input::-webkit-inner-spin-button {
   .container {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 500px;
   }
   .left-side {
     width: 100%;
@@ -218,16 +218,16 @@ img {
   color: hsl(183, 100%, 15%);
   font-weight: bold;
 }
-@media (max-width: 900px) {
+@media (max-width: 430px) {
   .container {
     flex-direction: column;
-    width: 500px;
+    width: 400px;
   }
   .left-side {
-    width: 90%;
+    width: auto;
   }
   .right-side {
-    width: 90%;
+    width: auto;
   }
   .reset {
     margin: 50px 20px 20px;
