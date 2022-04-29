@@ -1,6 +1,6 @@
 # Tip-Calculator
 
-![Tip Calculator Page Overview](https://github.com/strakins/kodecamp/blob/main/tipcalaculator_frontendMentor.jpg
+![Tip Calculator Page Overview](https://github.com/strakins/kodecamp/blob/main/tipcalaculator_frontendMentor.jpg)
 
 
 [Live Link](https://tip-calculator-3-git-development-strakins.vercel.app/)
