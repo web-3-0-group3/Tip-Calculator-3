@@ -37,7 +37,7 @@ tipsPercentage.map(tips => {
           document.querySelector('.tip50').classList.remove('selected')
           break;
         case "10%" : 
-          tipAmount.innerHTML = (amount * 0.1).toFixed(2);
+          tipAmount.innerHTML = ((amount * 0.1)/totalPersonOnTabble).toFixed(2);
           totalAmountPerPerson.innerHTML = ((parseFloat(amount) + parseFloat(amount*0.1))/totalPersonOnTabble).toFixed(2)
           document.querySelector('.tip5').classList.remove('selected')
           document.querySelector('.tip10').classList.add('selected')
